@@ -1,16 +1,24 @@
-# clap
+<p align="center"><a href="https://myskoolportal.com.ng" target="_blank"><img src="http://myskoolportal.com.ng/assets/img/logo/logo.png" width="400"></a></p>
 
-A new Flutter project.
+## About MySkool Portal
 
-## Getting Started
+MySkool Portal is a multi-tenant School Information Management System (SIMS) designed for proper storage and documentation of school data.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Language and Framework
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This project is developed with the [Flutter](https://flutter.dev/) SDK.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Additional Packages
+Other third party libraries used in this project can be found within the `pubspec.yaml` file.
+
+
+## Setup Prerequisites
+
+When you clone this repo for the first time, you should...
+
+- Run pub clean.
+- Run pub get.
+
+- All Good!
