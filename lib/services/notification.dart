@@ -24,8 +24,8 @@ class PushNotificationService {
 
       NotificationDetails notificationDetails = const NotificationDetails(
         android: AndroidNotificationDetails(
-          'cbs',
-          'cbs',
+          'clap',
+          'clap',
           importance: Importance.max,
           priority: Priority.high,
         ),
@@ -51,8 +51,8 @@ class PushNotificationService {
 
       NotificationDetails notificationDetails = const NotificationDetails(
         android: AndroidNotificationDetails(
-          'cbs',
-          'cbs',
+          'clap',
+          'clap',
           importance: Importance.max,
           priority: Priority.high,
         ),
