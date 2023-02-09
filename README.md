@@ -1,6 +1,6 @@
 <p align="center"><a href="https://myskoolportal.com.ng" target="_blank"><img src="http://myskoolportal.com.ng/assets/img/logo/logo.png" width="400"></a></p>
 
-## About Clap Portal
+## About Clap
 
 <!-- MySkool Portal is a multi-tenant School Information Management System (SIMS) designed for proper storage and documentation of school data. -->
 
