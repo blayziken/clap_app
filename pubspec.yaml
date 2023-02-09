@@ -1,0 +1,82 @@
+name: clap
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Icons 
+  cupertino_icons:
+  line_icons:
+
+  # Utils
+  google_fonts:
+  flutter_screenutil:
+  flutter_secure_storage:
+  flutter_svg:
+  http:
+  jiffy:
+  intl: 
+  device_info_plus:
+  pull_to_refresh:
+  top_snackbar_flutter:
+
+  # Firebase & Notifications
+  firebase_core:
+  firebase_messaging:
+  flutter_local_notifications:
+
+  # State management
+  hooks_riverpod:
+  get_it:
+
+  # Animation
+  loading_animation_widget:
+  flutter_animate:
+  lottie:
+
+  # Image
+  cached_network_image:
+  image_picker:  
+
+
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+#   flutter_launcher_icons:
+
+# flutter_icons:
+#   ios: true
+#   android: true
+#   image_path_ios: "assets/images/icon_app.png"
+#   image_path_android: "assets/images/icon_app.png"
+#   # adaptive_icon_background: "#ffffff"
+#   adaptive_icon_foreground: "#ffffff"
+#   remove_alpha_ios: true
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/svg/
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat-SemiBold.ttf
+        - asset: assets/fonts/Montserrat-Medium.ttf          
+  
