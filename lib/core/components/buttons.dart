@@ -44,7 +44,7 @@ class _CustomButtonState extends State<CustomButton> {
       child: InkWell(
         onTap: widget.onTap,
         child: Container(
-          height: widget.height ?? AppTheme.buttonHeight,
+          height: widget.height ?? 50.h,
           width: widget.width,
           decoration: BoxDecoration(
             color: widget.color ?? AppTheme.primaryColor,
@@ -70,8 +70,8 @@ class _CustomButtonState extends State<CustomButton> {
                         ),
                       NORMALTEXT(
                         text: widget.title,
-                        color: widget.textColor,
-                        size: widget.textSize ?? 15.sp,
+                        color: widget.textColor ?? Colors.white,
+                        size: widget.textSize ?? 18.sp,
                         weight: widget.weight,
                       ),
                       if (widget.suffixIcon != null)

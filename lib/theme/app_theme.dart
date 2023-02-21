@@ -13,7 +13,6 @@ class AppTheme {
 
   static const Color blackLight = Color(0xFF292031);
 
-  static double buttonHeight = 35.h;
   static Size size(BuildContext context) => MediaQuery.of(context).size;
 
   //colors

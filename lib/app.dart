@@ -1,4 +1,5 @@
 import 'app_exports.dart';
+import 'views/onboard/tetfund_splash.dart';
 
 class ClapApp extends StatefulWidget {
   const ClapApp({Key? key}) : super(key: key);
@@ -28,23 +29,9 @@ class _ClapAppState extends State<ClapApp> {
           debugShowCheckedModeBanner: false,
           title: 'CLAP',
           theme: AppTheme.theme,
-          home: const HomeW(),
+          home: const TetfundSplash(),
           // onGenerateRoute: navigationService.onGeneratedRoute,
         ),
-      ),
-    );
-  }
-}
-
-class HomeW extends StatelessWidget {
-  const HomeW({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: Container(
-        color: Colors.blue,
       ),
     );
   }

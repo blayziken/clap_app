@@ -28,11 +28,6 @@ dependencies:
   pull_to_refresh:
   top_snackbar_flutter:
 
-  # Firebase & Notifications
-  firebase_core:
-  firebase_messaging:
-  flutter_local_notifications:
-
   # State management
   hooks_riverpod:
   get_it:
@@ -45,9 +40,6 @@ dependencies:
   # Image
   cached_network_image:
   image_picker:  
-
-
-
 
 
 dev_dependencies:
@@ -72,6 +64,7 @@ flutter:
   assets:
     - assets/images/
     - assets/svg/
+    - assets/fonts/
 
   fonts:
     - family: Montserrat

@@ -31,7 +31,7 @@ class BOLDTEXT extends StatelessWidget {
       maxLines: maxLines,
       overflow: overflow,
       style: TextStyle(
-        fontSize: size ?? 15.sp,
+        fontSize: size ?? 18.sp,
         color: color ?? AppTheme.appText,
         fontWeight: weight ?? FontWeight.w500,
         fontStyle: fontStyle ?? FontStyle.normal,
@@ -75,7 +75,7 @@ class NORMALTEXT extends StatelessWidget {
       maxLines: maxLines,
       overflow: overflow,
       style: TextStyle(
-        fontSize: size ?? 15.sp,
+        fontSize: size ?? 18.sp,
         color: color ?? AppTheme.appText,
         fontWeight: weight ?? FontWeight.normal,
         fontStyle: fontStyle ?? FontStyle.normal,
