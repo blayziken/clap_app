@@ -1,6 +1,7 @@
 import 'package:clap/app_exports.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
+import '../join.dart';
 import 'state.dart';
 
 class BimsVerification extends ConsumerWidget {
@@ -61,7 +62,14 @@ class BimsVerification extends ConsumerWidget {
                     ),
                     YMargin.margin10,
                     CustomButton(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const JoinForFree(),
+                          ),
+                        );
+                      },
                       title: 'Proceed',
                       textSize: 23.sp,
                       height: 60.h,

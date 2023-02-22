@@ -9,5 +9,11 @@ class AppImages {
 
   static const String bimsBackground = 'assets/images/background.png';
 
+  static const String joinBackground = 'assets/images/background_2.png';
+
+  static const String gradient = 'assets/images/gradient.png';
+
   static const String poweredBy = 'assets/images/poweredBy.png';
+
+  static const String womanChatting = 'assets/images/woman_chatting.png';
 }
