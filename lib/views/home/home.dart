@@ -12,7 +12,7 @@ class Home extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 100.h,
+        toolbarHeight: 80.h,
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 15),

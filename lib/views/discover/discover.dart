@@ -1,4 +1,6 @@
 import 'package:clap/app_exports.dart';
+import 'books/books.dart';
+import 'news/news_tab.dart';
 
 class Discover extends StatefulWidget {
   const Discover({super.key});
@@ -12,39 +14,38 @@ class _DiscoverState extends State<Discover> with SingleTickerProviderStateMixin
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: double.infinity,
       // color: Colors.yellow,
       child: DefaultTabController(
-        length: 5,
+        length: 4,
         child: Column(
           children: [
             Expanded(
               flex: 0,
               child: Align(
                 alignment: Alignment.centerLeft,
-                child: SizedBox(
-                  height: 60.h,
-                  child: TabBar(
-                    controller: tabController,
-                    unselectedLabelColor: Colors.black,
-                    labelColor: Colors.green,
-                    labelStyle: const TextStyle(
-                      color: Colors.green,
-                      fontWeight: FontWeight.w600,
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 20),
+                  child: SizedBox(
+                    height: 60.h,
+                    child: TabBar(
+                      controller: tabController,
+                      unselectedLabelColor: AppTheme.primaryColor,
+                      labelColor: const Color(0XFFF29100),
+                      labelStyle: AppTheme.textTheme.bodyText2!.copyWith(
+                        color: Colors.green,
+                        fontWeight: FontWeight.w600,
+                      ),
+                      indicatorColor: Colors.transparent,
+                      isScrollable: true,
+                      tabs: const [
+                        Tab(text: 'All'),
+                        Tab(text: 'Books'),
+                        Tab(text: 'Audio books'),
+                        Tab(text: 'News'),
+                      ],
                     ),
-                    indicatorColor: Colors.purple,
-                    indicatorSize: TabBarIndicatorSize.label,
-                    isScrollable: true,
-                    tabs: const [
-                      // ALL PRODUCTS
-                      Tab(text: 'All'),
-
-                      Tab(text: 'Hair'),
-                      Tab(text: 'Makeup'),
-                      Tab(text: '3'),
-                      Tab(text: 'df'),
-                    ],
                   ),
                 ),
               ),
@@ -63,26 +64,13 @@ class _DiscoverState extends State<Discover> with SingleTickerProviderStateMixin
                       width: double.infinity,
                       color: Colors.yellow,
                     ),
-                    Container(
-                      height: 100,
-                      width: double.infinity,
-                      color: Colors.green,
-                    ),
+                    const Books(),
                     Container(
                       // height: 100,
                       width: double.infinity,
                       color: Colors.purple,
                     ),
-                    Container(
-                      height: 100,
-                      width: double.infinity,
-                      color: Colors.brown,
-                    ),
-                    Container(
-                      height: 100,
-                      width: double.infinity,
-                      color: Colors.orange,
-                    ),
+                    const NewsTab(),
                   ],
                 ),
               ),

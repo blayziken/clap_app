@@ -21,7 +21,7 @@ class AppTheme {
   static const Color iconColor = Color(0XFF344767); // Color(0XFFf5f5f5); //
   static const Color backgroundColor = Color(0XFFEDF5F9); // Color(0XFFf5f5f5); //
   static const Color appBarBackgroundColor = Color(0XFFEDF5F9);
-  static const Color primaryColor = Color.fromARGB(255, 16, 131, 41);
+  static const Color primaryColor = Color(0XFF01796F); //Color.fromARGB(255, 16, 131, 41);
   static const Color black = Color(0xFF141416);
   static const Color orange = Color(0xFFFFBD69);
   static const Color orangeDark = Color(0xFFFF7565);
@@ -41,82 +41,32 @@ class AppTheme {
 
   //text theme
   static TextTheme textTheme = TextTheme(
-    headline1: GoogleFonts.poppins(
-      fontSize: 38.4,
+    headline1: TextStyle(
+      fontSize: 30.sp,
       letterSpacing: -1.0,
       color: Colors.black,
       fontWeight: FontWeight.w400,
+      fontFamily: 'Montserrat',
     ),
-    headline2: GoogleFonts.poppins(
-      fontSize: 27.2,
+    headline2: TextStyle(
+      fontSize: 25.sp,
       letterSpacing: -0.25,
       color: Colors.black,
       fontWeight: FontWeight.w400,
+      fontFamily: 'Montserrat',
     ),
-    headline3: GoogleFonts.poppins(
-      fontSize: 21.2,
-      letterSpacing: 0,
-      color: Colors.black,
-      fontWeight: FontWeight.w600,
-    ),
-    headline4: GoogleFonts.poppins(
-      fontSize: 20.4,
-      letterSpacing: 0,
-      color: Colors.black,
-      fontWeight: FontWeight.w400,
-    ),
-    headline5: GoogleFonts.poppins(
-      fontSize: 18.0,
-      letterSpacing: 0,
-      color: Colors.black,
-      fontWeight: FontWeight.w600,
-    ),
-    headline6: GoogleFonts.poppins(
-      fontSize: 17.0,
-      letterSpacing: 0.25,
-      color: Colors.black,
-      fontWeight: FontWeight.w400,
-    ),
-    subtitle1: GoogleFonts.poppins(
-      fontSize: 15.3,
-      letterSpacing: 0.15,
-      color: Colors.black,
-      fontWeight: FontWeight.w500,
-    ),
-    subtitle2: GoogleFonts.poppins(
-      fontSize: 11.3,
-      letterSpacing: 0.1,
-      color: Colors.black,
-      fontWeight: FontWeight.w500,
-    ),
-    bodyText1: GoogleFonts.poppins(
-      fontSize: 15.sp,
+    bodyText1: TextStyle(
+      fontSize: 20.sp,
       letterSpacing: 0.5,
       color: Colors.black,
       fontWeight: FontWeight.w500,
+      fontFamily: 'Montserrat',
     ),
-    bodyText2: GoogleFonts.poppins(
-      fontSize: 15.sp,
+    bodyText2: TextStyle(
+      fontSize: 18.sp,
       color: Colors.black,
       fontWeight: FontWeight.w500,
-    ),
-    caption: GoogleFonts.poppins(
-      fontSize: 10.8,
-      letterSpacing: 0.4,
-      color: Colors.black,
-      fontWeight: FontWeight.w400,
-    ),
-    button: GoogleFonts.poppins(
-      fontSize: 18.0,
-      letterSpacing: 0.60,
-      color: Colors.black,
-      fontWeight: FontWeight.w500,
-    ),
-    overline: GoogleFonts.poppins(
-      fontSize: 8.0,
-      letterSpacing: 0.1,
-      color: Colors.black,
-      fontWeight: FontWeight.w400,
+      fontFamily: 'Montserrat',
     ),
   );
 

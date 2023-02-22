@@ -16,4 +16,16 @@ class AppImages {
   static const String poweredBy = 'assets/images/poweredBy.png';
 
   static const String womanChatting = 'assets/images/woman_chatting.png';
+
+  static const String news1 = 'assets/images/news1.png';
+
+  static const String news2 = 'assets/images/news2.png';
+
+  static const String book1 = 'assets/images/book1.png';
+
+  static const String book2 = 'assets/images/book2.png';
+
+  static const String book3 = 'assets/images/book3.png';
+
+  static const String book4 = 'assets/images/book4.png';
 }

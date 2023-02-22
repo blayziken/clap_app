@@ -1,5 +1,6 @@
 import 'package:clap/app_exports.dart';
 import 'package:clap/views/discover/discover.dart';
+import 'package:clap/views/more/more.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 final homeProvider = ChangeNotifierProvider<HomeProvider>(
@@ -19,6 +20,6 @@ class HomeProvider extends ChangeNotifier {
     const Discover(),
     Container(color: Colors.red),
     Container(color: Colors.green),
-    Container(color: Colors.purple),
+    const More(),
   ];
 }

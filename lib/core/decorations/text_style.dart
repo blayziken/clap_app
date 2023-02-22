@@ -33,7 +33,7 @@ class BOLDTEXT extends StatelessWidget {
       style: TextStyle(
         fontSize: size ?? 18.sp,
         color: color ?? AppTheme.appText,
-        fontWeight: weight ?? FontWeight.w500,
+        fontWeight: weight ?? FontWeight.bold,
         fontStyle: fontStyle ?? FontStyle.normal,
         letterSpacing: spacing,
         height: 0,
