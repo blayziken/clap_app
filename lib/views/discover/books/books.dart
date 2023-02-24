@@ -109,7 +109,7 @@ class BookCard extends StatelessWidget {
                             ),
                             XMargin.margin2,
                             Icon(
-                              Icons.download,
+                              Icons.cloud_download,
                               color: AppTheme.primaryColor,
                               size: 20.sp,
                             ),

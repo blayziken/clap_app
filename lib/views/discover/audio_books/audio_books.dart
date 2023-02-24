@@ -119,7 +119,7 @@ class AudioBookCard extends StatelessWidget {
                             ),
                             XMargin.margin10,
                             Icon(
-                              Icons.download,
+                              Icons.cloud_download,
                               color: AppTheme.primaryColor,
                               size: 25.h,
                             ),
