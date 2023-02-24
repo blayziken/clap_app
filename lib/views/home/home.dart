@@ -1,6 +1,8 @@
 import 'package:clap/app_exports.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'app_bar.dart';
 import 'bottom_bar.dart';
+import 'drawer.dart';
 import 'state.dart';
 
 class Home extends ConsumerWidget {
@@ -11,36 +13,8 @@ class Home extends ConsumerWidget {
     final HomeProvider state = ref.watch(homeProvider);
 
     return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: 80.h,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 15),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(LineIcons.bellAlt, size: 40.sp),
-                XMargin.margin20,
-                Container(
-                  height: 40,
-                  width: 40,
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Colors.green,
-                  ),
-                ),
-                XMargin.margin20,
-                CircleAvatar(
-                  radius: 20.r,
-                  backgroundColor: Colors.blue,
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-      drawer: const Drawer(),
+      appBar: const ClapAppBar(),
+      drawer: const AppDrawer(),
       body: state.navScreens[state.currentIndex],
       bottomNavigationBar: const BottomNavBar(),
       floatingActionButton: Padding(
