@@ -24,14 +24,35 @@ class More extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            const MoreCard(title: 'Libraries'),
-            const MoreCard(title: 'Recommend a Title to Clap'),
-            const MoreCard(title: 'My Recommendation'),
-            const MoreCard(title: 'Submit Feedback'),
-            const MoreCard(title: 'Saved'),
-            const MoreCard(title: 'Get more data'),
-            const MoreCard(title: 'Recommend a Title to CLAP'),
-            const Divider(color: Color(0XFF999999), thickness: 0.5),
+            MoreCard(
+              title: 'Libraries',
+              onTap: () {},
+            ),
+            MoreCard(
+              title: 'Recommend a Title to Clap',
+              onTap: () {},
+            ),
+            MoreCard(
+              title: 'My Recommendation',
+              onTap: () {},
+            ),
+            MoreCard(
+              title: 'Submit Feedback',
+              onTap: () {},
+            ),
+            MoreCard(
+              title: 'Saved',
+              onTap: () {},
+            ),
+            MoreCard(
+              title: 'Get more data',
+              onTap: () {},
+            ),
+            MoreCard(
+              title: 'Recommend a Title to CLAP',
+              onTap: () {},
+            ),
+            Divider(color: Color(0XFF999999), thickness: 0.5),
             YMargin.margin10,
             BOLDTEXT(
               text: 'Version 1.0.9',
@@ -54,38 +75,43 @@ class More extends StatelessWidget {
 
 class MoreCard extends StatelessWidget {
   final String title;
-  const MoreCard({super.key, required this.title});
+  final VoidCallback onTap;
+
+  const MoreCard({super.key, required this.title, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 10),
-      child: Column(
-        children: [
-          const Divider(color: Color(0XFF999999), thickness: 0.5),
-          YMargin.margin10,
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Flexible(
-                child: BOLDTEXT(
-                  text: title,
-                  size: 20.sp,
-                  color: AppTheme.primaryColor,
-                  maxLines: 1,
+    return InkWell(
+      onTap: onTap,
+      child: Padding(
+        padding: EdgeInsets.only(bottom: 10),
+        child: Column(
+          children: [
+            Divider(color: Color(0XFF999999), thickness: 0.5),
+            YMargin.margin10,
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Flexible(
+                  child: BOLDTEXT(
+                    text: title,
+                    size: 20.sp,
+                    color: AppTheme.primaryColor,
+                    maxLines: 1,
+                  ),
                 ),
-              ),
-              Icon(
-                Icons.arrow_forward_ios_outlined,
-                color: AppTheme.primaryColor,
-                size: 25.sp,
-              ),
-            ],
-          ),
-          // YMargin.margin10,
-          // const Divider(color: Color(0XFF999999), thickness: 0.5),
-        ],
+                Icon(
+                  Icons.arrow_forward_ios_outlined,
+                  color: AppTheme.primaryColor,
+                  size: 25.sp,
+                ),
+              ],
+            ),
+            // YMargin.margin10,
+            //  Divider(color: Color(0XFF999999), thickness: 0.5),
+          ],
+        ),
       ),
     );
   }

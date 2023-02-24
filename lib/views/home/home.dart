@@ -1,6 +1,5 @@
 import 'package:clap/app_exports.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'app_bar.dart';
 import 'bottom_bar.dart';
 import 'drawer.dart';
 import 'state.dart';

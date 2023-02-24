@@ -20,3 +20,5 @@ export 'package:flutter_secure_storage/flutter_secure_storage.dart';
 export 'package:clap/core/utils/images.dart';
 export 'package:clap/core/components/textfield.dart';
 export 'package:clap/core/components/buttons.dart';
+export 'package:flutter_svg/flutter_svg.dart';
+export 'package:clap/views/home/app_bar.dart';

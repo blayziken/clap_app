@@ -1,6 +1,7 @@
 import 'package:clap/app_exports.dart';
 import 'package:clap/views/discover/discover.dart';
 import 'package:clap/views/more/more.dart';
+import 'package:clap/views/purchase_data.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 final homeProvider = ChangeNotifierProvider<HomeProvider>(
@@ -19,7 +20,7 @@ class HomeProvider extends ChangeNotifier {
   List<Widget> navScreens = <Widget>[
     const Discover(),
     Container(color: Colors.red),
-    Container(color: Colors.green),
+    const PurchaseData(),
     const More(),
   ];
 }
