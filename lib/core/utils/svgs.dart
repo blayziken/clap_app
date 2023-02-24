@@ -24,4 +24,6 @@ class AppSVG {
   static const String funding = 'assets/svg/funding.svg';
 
   static const String audiobook = 'assets/svg/audiobook.svg';
+
+  static const String message = 'assets/svg/message.svg';
 }

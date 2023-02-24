@@ -1,5 +1,7 @@
 import 'package:clap/app_exports.dart';
 
+import '../recommend.dart';
+
 class More extends StatelessWidget {
   const More({super.key});
 
@@ -29,8 +31,15 @@ class More extends StatelessWidget {
               onTap: () {},
             ),
             MoreCard(
-              title: 'Recommend a Title to Clap',
-              onTap: () {},
+              title: 'Recommend a Friend to Clap',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const RecommendFriend(),
+                  ),
+                );
+              },
             ),
             MoreCard(
               title: 'My Recommendation',
@@ -49,10 +58,17 @@ class More extends StatelessWidget {
               onTap: () {},
             ),
             MoreCard(
-              title: 'Recommend a Title to CLAP',
-              onTap: () {},
+              title: 'Recommend a Friend to CLAP',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const RecommendFriend(),
+                  ),
+                );
+              },
             ),
-            Divider(color: Color(0XFF999999), thickness: 0.5),
+            const Divider(color: Color(0XFF999999), thickness: 0.5),
             YMargin.margin10,
             BOLDTEXT(
               text: 'Version 1.0.9',
@@ -84,10 +100,10 @@ class MoreCard extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Padding(
-        padding: EdgeInsets.only(bottom: 10),
+        padding: const EdgeInsets.only(bottom: 10),
         child: Column(
           children: [
-            Divider(color: Color(0XFF999999), thickness: 0.5),
+            const Divider(color: Color(0XFF999999), thickness: 0.5),
             YMargin.margin10,
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,

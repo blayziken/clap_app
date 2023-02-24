@@ -36,4 +36,6 @@ class AppImages {
   static const String audiobook3 = 'assets/images/audiobook3.png';
 
   static const String audiobook4 = 'assets/images/audiobook4.png';
+
+  static const String profilePicture = 'assets/images/profilePicture.png';
 }
