@@ -32,7 +32,7 @@ class BOLDTEXT extends StatelessWidget {
       overflow: overflow,
       style: TextStyle(
         fontSize: size ?? 18.sp,
-        color: color ?? AppTheme.appText,
+        color: color ?? Colors.black, // AppTheme.appText,
         fontWeight: weight ?? FontWeight.bold,
         fontStyle: fontStyle ?? FontStyle.normal,
         letterSpacing: spacing,
@@ -76,7 +76,7 @@ class NORMALTEXT extends StatelessWidget {
       overflow: overflow,
       style: TextStyle(
         fontSize: size ?? 18.sp,
-        color: color ?? AppTheme.appText,
+        color: color ?? Colors.black, // AppTheme.appText,
         fontWeight: weight ?? FontWeight.normal,
         fontStyle: fontStyle ?? FontStyle.normal,
         letterSpacing: spacing,
