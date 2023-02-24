@@ -1,12 +1,16 @@
 import 'package:clap/app_exports.dart';
 
 class ClapAppBar extends StatelessWidget with PreferredSizeWidget {
-  const ClapAppBar({Key? key}) : super(key: key);
+  final Widget? title;
+  const ClapAppBar({Key? key, this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       toolbarHeight: 80.h,
+      title: title,
+      titleSpacing: -10,
+      centerTitle: false,
       actions: [
         Padding(
           padding: const EdgeInsets.only(right: 15),
