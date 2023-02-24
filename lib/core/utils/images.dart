@@ -28,4 +28,12 @@ class AppImages {
   static const String book3 = 'assets/images/book3.png';
 
   static const String book4 = 'assets/images/book4.png';
+
+  static const String audiobook1 = 'assets/images/audiobook1.png';
+
+  static const String audiobook2 = 'assets/images/audiobook2.png';
+
+  static const String audiobook3 = 'assets/images/audiobook3.png';
+
+  static const String audiobook4 = 'assets/images/audiobook4.png';
 }

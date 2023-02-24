@@ -4,11 +4,16 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import '../join.dart';
 import 'state.dart';
 
-class BimsVerification extends ConsumerWidget {
+class BimsVerification extends ConsumerStatefulWidget {
   const BimsVerification({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<BimsVerification> createState() => _BimsVerificationState();
+}
+
+class _BimsVerificationState extends ConsumerState<BimsVerification> {
+  @override
+  Widget build(BuildContext context) {
     final AuthProvider auth = ref.watch(authProvider);
     return Scaffold(
       body: Container(

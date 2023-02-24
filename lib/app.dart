@@ -1,4 +1,5 @@
 import 'app_exports.dart';
+import 'views/onboard/clap_splash.dart';
 import 'views/onboard/tetfund_splash.dart';
 
 class ClapApp extends StatefulWidget {
@@ -29,7 +30,7 @@ class _ClapAppState extends State<ClapApp> {
           debugShowCheckedModeBanner: false,
           title: 'CLAP',
           theme: AppTheme.theme,
-          home: const TetfundSplash(),
+          home: const ClapSplash(),
           // onGenerateRoute: navigationService.onGeneratedRoute,
         ),
       ),

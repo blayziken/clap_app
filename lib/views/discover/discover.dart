@@ -1,4 +1,5 @@
 import 'package:clap/app_exports.dart';
+import 'audio_books/audio_books.dart';
 import 'books/books.dart';
 import 'news/news_tab.dart';
 
@@ -65,11 +66,7 @@ class _DiscoverState extends State<Discover> with SingleTickerProviderStateMixin
                       color: Colors.yellow,
                     ),
                     const Books(),
-                    Container(
-                      // height: 100,
-                      width: double.infinity,
-                      color: Colors.purple,
-                    ),
+                    const AudioBooks(),
                     const NewsTab(),
                   ],
                 ),
