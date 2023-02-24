@@ -42,6 +42,7 @@ class AppDrawer extends StatelessWidget {
               icon: AppSVG.journals,
               title: 'Journals',
               onTap: () {
+                Navigator.pop(context);
                 Navigator.push(
                   context,
                   MaterialPageRoute(
