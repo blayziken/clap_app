@@ -15,7 +15,7 @@ class More extends StatelessWidget {
           text: 'More',
           size: 25.sp,
           color: AppTheme.primaryColor,
-          weight: FontWeight.w900,
+          weight: FontWeight.w700,
         ),
       ),
       body: Padding(
