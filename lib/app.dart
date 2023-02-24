@@ -37,3 +37,6 @@ class _ClapAppState extends State<ClapApp> {
     );
   }
 }
+
+
+// TODO: ADD GO ROUTER
