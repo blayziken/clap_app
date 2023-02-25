@@ -1,7 +1,7 @@
 import 'package:clap/app_exports.dart';
-import 'package:clap/core/utils/svgs.dart';
 import 'package:clap/views/profile/profile.dart';
 import '../journals/journals.dart';
+import 'home.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});
@@ -45,7 +45,15 @@ class AppDrawer extends StatelessWidget {
             DrawerItem(
               icon: AppSVG.home,
               title: 'Home',
-              onTap: () {},
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Home(),
+                  ),
+                );
+              },
             ),
             DrawerItem(
               icon: AppSVG.journals,
